@@ -1,0 +1,23 @@
+library(terra)
+library(imageRy)
+library(viridis)
+library(raster)
+
+
+ setwd("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus")
+ sentinel.img.tc<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_True_color.tiff")
+
+
+setwd("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus")
+sentinel.img.tc<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_True_color.tiff")
+
+#importo le bande (2,3,4,8,11,12)
+b2<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_B02_(Raw).tiff")
+b3<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_B03_(Raw).tiff")
+b4<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_B04_(Raw).tiff")
+b8<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_B08_(Raw).tiff")
+b11<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_B11_(Raw).tiff")
+b12<-raster("C:/Users/utente/Desktop/GIS_molveno/images_from_copernicus/2024-04-12-00_00_2024-04-12-23_59_Sentinel-2_L1C_B12_(Raw).tiff")
+
+
+
